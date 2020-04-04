@@ -9,6 +9,10 @@
     "build": "webpack"
   },
   "author": "Javier Perez",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sljavi/handsfree-for-web-modules"
+  },
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.5.5",
