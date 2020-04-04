@@ -14,6 +14,11 @@ module.exports = {
     https: true,
     contentBase: './dist',
   },
+  externals: {
+    jquery: 'jquery',
+    lodash: 'lodash',
+    moment: 'moment',
+  },
   module: {
     rules: [{
       test: /\.js$/,

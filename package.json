@@ -1,8 +1,9 @@
 {
   "name": "handsfree-for-web-modules",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Voice commands modules for Handsfree for web",
-  "main": "index.js",
+  "source": "src/index.js",
+  "main": "dist/handsfree-for-web-modules.js",
   "scripts": {
     "lint": "eslint src",
     "start": "webpack-dev-server --open",
