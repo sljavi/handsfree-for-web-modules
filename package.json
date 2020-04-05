@@ -36,8 +36,6 @@
     "moment": "^2.14.1"
   },
   "dependencies": {
-    "handsfree-for-web-control-speech-recognition-module": "^1.1.4",
-    "handsfree-for-web-zoom-module": "^1.1.1",
     "jquery": "^3.4.1",
     "moment": "^2.24.0"
   }
