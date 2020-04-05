@@ -1,42 +1,5 @@
 import { executeBackgroundAction } from './helpers/background';
 
-const zoomFactor = 0.1;
-
-
-export function zoomInTab() {
-  const { tabs } = window.chrome;
-  tabs.query({ active: true, lastFocusedWindow: true }, (tab) => {
-    const tabId = tab[0].id;
-    tabs.getZoom(tabId, (zoom) => {
-      tabs.setZoom(tabId, zoom + zoomFactor);
-    });
-  });
-}
-
-export function zoomOutTab() {
-  const { tabs } = window.chrome;
-  tabs.query({
-    active: true,
-    lastFocusedWindow: true,
-  }, (tab) => {
-    const tabId = tab[0].id;
-    tabs.getZoom(tabId, (zoom) => {
-      tabs.setZoom(tabId, zoom - zoomFactor);
-    });
-  });
-}
-
-export function restoreZoom() {
-  const { tabs } = window.chrome;
-  tabs.query({
-    active: true,
-    lastFocusedWindow: true,
-  }, (tab) => {
-    const tabId = tab[0].id;
-    tabs.setZoom(tabId, 0);
-  });
-}
-
 function zoomIn() {
   executeBackgroundAction({
     zoomIn: true,
