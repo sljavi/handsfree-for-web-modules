@@ -52,6 +52,13 @@ export default {
         'command.start-listening': 'ativar reconhecimento de voz',
         'help.start-listening': 'Começa o processo de reconhecimento de voz',
       },
+      yue: {
+        'group.listeningControl': 'Listening Control',
+        'command.stop-listening': 'go to sleep',
+        'help.stop-listening': 'Stop voice recognition process',
+        'command.start-listening': 'wake up',
+        'help.start-listening': 'Start voice recognition process',
+      },
     },
   }],
   i18n: {
